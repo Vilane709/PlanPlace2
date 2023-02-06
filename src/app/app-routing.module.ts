@@ -38,4 +38,4 @@ const routes: Routes = [
 export class AppRoutingModule { }
 
 
-console.log(1);
+console.log(2);
