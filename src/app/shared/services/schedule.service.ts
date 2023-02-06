@@ -67,7 +67,6 @@ export class ScheduleService {
 				}
 			];
 			this.setScheduleInLocalStorage(this.schedule);
-
 		} else {
 			this.schedule = this.getScheduleInLocalStorage();
 		}
