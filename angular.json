@@ -38,7 +38,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/plan-place2",
+            "outputPath": "dist/PlanPlace2",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -90,7 +90,7 @@
                   "with": "src/environments/environment.github.ts"
                 }
               ],
-							"baseHref": "/plan-place2/",
+							"baseHref": "/PlanPlace2/",
               "outputHashing": "all"
             },
             "development": {

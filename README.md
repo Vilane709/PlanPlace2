@@ -1,4 +1,7 @@
 # PlanPlace2
+<!-- https://vilane709.github.io/PlanPlace2/ -->
+
+[https://vilane709.github.io/PlanPlace2](https://vilane709.github.io/PlanPlace2/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.2.
 
