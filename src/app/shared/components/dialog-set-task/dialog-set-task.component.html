@@ -1,0 +1,17 @@
+<div class="popup">
+
+	<form [formGroup]="form" (ngSubmit)="submitForm()">
+		<!-- <mat-form-field class="example-full-width"> -->
+			<div class="task"> {{ data.task }} </div>
+			<!-- <mat-label>Favorite food</mat-label> -->
+			<input class="input" type="time" formControlName="start" value="12:31">
+			<input class="input" type="time" formControlName="end"><br>
+
+			<button class="button" type="submit" [disabled]="!formValid">
+				Отправить
+			</button>
+		<!-- </mat-form-field> -->
+
+	</form>
+
+</div>

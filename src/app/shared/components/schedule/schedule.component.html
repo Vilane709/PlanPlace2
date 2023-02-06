@@ -1,0 +1,34 @@
+
+<div class="days">
+    <ng-container *ngFor="let day of schedule">
+
+        <!-- {{ ['day', day.path] | json }} -->
+        <button
+            [ngClass]="{
+                'day_active': activeDay(day.path)
+            }"
+            type="button"
+            class="button days__button day"
+            (click)="routerClick(day.path)"
+        >
+            {{ day.value }}
+        </button>
+
+    </ng-container>
+</div>
+
+<div class="tasks">
+    <ng-container *ngFor="let day of schedule">
+         <ng-container *ngIf="routeDay === day.path">
+
+					<ng-container *ngFor="let task of tasks">
+						<button type="button" class="task" (click)="openDialogCreateTask(task, day.path)">
+							{{task}}
+						</button>
+					</ng-container>
+
+           <button type="button" class="task task_new" (click)="openDialogCreateCategoryTask(day.path)">+</button>
+
+         </ng-container>
+    </ng-container>
+</div>

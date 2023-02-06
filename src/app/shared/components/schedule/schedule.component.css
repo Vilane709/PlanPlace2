@@ -1,0 +1,70 @@
+:host {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.days {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+.days__button {
+	color: inherit;
+	background-color: rgb(45, 45, 45);
+	padding: 5px;
+	min-width: 110px;
+	width: 7%;
+	border-radius: 8px;
+	border: none;
+	cursor: pointer;
+	transition-duration: 0.2s;
+}
+
+.days__button:hover {
+	-moz-box-shadow:0 0 10px #000; -webkit-box-shadow:0 0 10px #000; box-shadow:0 0 10px rgb(255, 255, 255);
+}
+
+.day_active {
+	background-color: rgb(62, 62, 62);
+}
+
+.tasks {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+}
+
+.task {
+	color: white;
+	background-color: rgb(45, 45, 45);
+	padding: 10px 20px;
+	min-width: 110px;
+	width: 7%;
+	border-radius: 25px;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 0.85em;
+	transition-duration: 0.2s;
+}
+
+.task_new {
+	width: auto;
+	min-width: auto;
+	transition-duration: 0.2s;
+}
+
+.task:hover {
+	-moz-box-shadow:0 0 10px #000; -webkit-box-shadow:0 0 10px #000; box-shadow:0 0 10px rgb(255, 255, 255);
+}
+
+.task_new:hover {
+	-moz-box-shadow:0 0 10px #000; -webkit-box-shadow:0 0 10px #000; box-shadow:0 0 10px rgb(255, 255, 255);
+}

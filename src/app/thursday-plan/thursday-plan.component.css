@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+/* блоки работ */
+
+.work_bloks {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.work, .work_plus {
+	color: white;
+    background-color: rgb(45, 45, 45);
+	padding: 10px;
+    margin: 0 3px 20px 0;
+	min-width: 110px;
+	width: 7%;
+	border-radius: 25px;
+	border: none;
+	cursor: pointer;
+}
+.work_plus {
+    width: 1px;
+    min-width: 38px;
+    font-weight: 600;
+}
+
+/* разметка плана */
+
+.plan_bloks {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.markup_containers, .markup_time{
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+}
+.markup_containers {
+    margin-left: 3.3333333333%;
+    margin-right: 3.3333333333%;
+}
+.markup_containers div {
+    border-left: 1px solid rgb(62, 62, 62);
+    padding: 30px;
+}
+.markup_containers:last-child {
+    border-right: 1px solid rgb(62, 62, 62);
+}
+.markup_time {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+}
+.markup_time div {
+    text-align: center;
+    margin-left: 6%;
+    margin-right: 6%;
+    color: rgb(118, 118, 118);
+    cursor: default
+}

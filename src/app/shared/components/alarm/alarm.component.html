@@ -1,0 +1,14 @@
+<ng-container *ngIf="tasksTime$ | async as tasksTime">
+	<div class="task-time-wrapper">
+		<ng-container *ngFor="let taskTime of tasksTime">
+			<div class="task-time">
+				<div class="task-time__time">
+					<div class="task-time__start"> {{ taskTime.start }} </div>
+					<div class="task-time__hyphen"> </div>
+					<div class="task-time__end"> {{ taskTime.end }} </div>
+				</div>
+				<div class="task-time__task"> {{ taskTime.task }} </div>
+			</div>
+		</ng-container>
+	</div>
+</ng-container>

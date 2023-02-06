@@ -1,0 +1,44 @@
+.popup {
+	background-color: rgb(48, 48, 48);;
+	color: white;
+	padding: 30px 25px;
+	text-align: center;
+}
+
+.input {
+	margin: 20px;
+	background-color: rgb(73, 73, 73);
+	border: none;
+	border-radius: 20px;
+	color: white;
+	padding: 20px 25px;
+}
+
+.task {
+	font-size: medium;
+}
+
+.button {
+	background-color: rgb(73, 73, 73);
+	border: none;
+	border-radius: 20px;
+	color: white;
+	padding: 10px 15px;
+	cursor: pointer;
+	transition-duration: 0.2s;
+}
+
+.button:hover {
+	-moz-box-shadow:0 0 10px rgb(255, 255, 255); -webkit-box-shadow:0 0 10px rgb(255, 255, 255); box-shadow:0 0 10px rgb(255, 255, 255);
+}
+
+.button:disabled:hover {
+	-moz-box-shadow:0 0 0; -webkit-box-shadow:0 0 0; box-shadow:0 0 0;
+}
+
+.button:disabled {
+	cursor: none;
+	background-color: rgba(19, 1, 1, 0.3);
+	color: rgba(255, 255, 255, 0.3);
+	border-color: rgba(195, 195, 195, 0.3);
+}

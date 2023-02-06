@@ -1,0 +1,317 @@
+main {
+	margin: 0%;
+}
+
+/* меню */
+
+.wrapper {
+	position: relative;
+}
+
+.menu {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 20%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(45, 45, 45);
+	transition: 0.5s;
+	transform: translateX(-100%);
+	z-index: 1;
+}
+
+.menu-active {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 20%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(45, 45, 45);
+	transition: 0.5s;
+	transform: translateX(0%);
+}
+
+.menu-list {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 50%;
+	flex-direction: column;
+}
+
+.menu-list a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 900;
+	color: white;
+}
+
+.menubtn {
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-color: rgb(45, 45, 45);
+	position: absolute;
+	right: -60px;
+	top: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: 0.5s;
+	border: none;
+}
+
+.menubtn_active {
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-color: rgb(45, 45, 45);
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: 0.4s;
+	border: none;
+}
+
+.menubtn span,
+.menubtn span::before,
+.menubtn span::after,
+.menubtn_active span,
+.menubtn_active span::before,
+.menubtn_active span::after {
+	position: absolute;
+	top: 50%;
+	margin-top: -1px;
+	left: 30%;
+	margin-left: -10;
+	width: 20px;
+	height: 2px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.menubtn span::before,
+.menubtn span::after,
+.menubtn_active span::before,
+.menubtn_active span::after {
+	content: '';
+	left: 0%;
+	display: block;
+	transition: 0.2s;
+}
+
+.menubtn span::before,
+.menubtn_active span::before {
+	transform: translateY(-4px);
+}
+
+.menubtn span::after,
+.menubtn_active span::after {
+	transform: translateY(5px);
+	margin-top: -1.5px;
+}
+
+.menubtn_active span::before {
+	transform: rotate(-35deg);
+	width: 10px;
+	transform-origin: left bottom
+}
+
+.menubtn_active span::after {
+	transform: rotate(35deg);
+	width: 10px;
+	transform-origin: left top;
+}
+
+.content {
+	left: 0;
+	transition: 0.5s ease left;
+	position: relative;
+	z-index: 0;
+	display: flow-root;
+}
+
+.content_active {
+	left: 20%;
+}
+
+/* форма входа */
+
+/* .entrance {
+	position: fixed;
+	display: block;
+	height: 100%;
+	z-index: 999;
+	left: 0;top: 0;
+	background-color: rgb(62, 62, 62);
+}
+form {
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+input {
+    display: block;
+    background-color: rgb(45, 45, 45);
+	color: white;
+	border: none;
+}
+button {
+    background-color: rgb(45, 45, 45);
+	color: white;
+	border: none;
+}
+select {
+    background-color: rgb(45, 45, 45);
+	color: white;
+	border: none;
+}
+
+/* заголовок */
+
+header {
+	width: 100%;
+	text-align: center;
+}
+
+h1 {
+	color: white;
+	cursor: default;
+}
+
+.entrance {
+	border-radius: 20px;
+	display: block;
+	position: fixed;
+	right: 10px;
+	top: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	cursor: pointer;
+}
+
+/* дни недели */
+
+.week_days {
+	text-align: center;
+}
+
+.week_days ul {
+	display: inline-block;
+	justify-content: space-around;
+	padding: 0;
+}
+
+.week_days li {
+	display: inline-block;
+	list-style-type: none;
+	text-align: center;
+	background-color: rgb(45, 45, 45);
+	min-width: 95px;
+	width: 7%;
+	margin: 0 10px 10px 20px;
+	border-radius: 25px;
+}
+
+.week_days button {
+	color: white;
+	background-color: rgb(45, 45, 45);
+	padding: 5px;
+	min-width: 110px;
+	width: 7%;
+	border-radius: 8px;
+	border: none;
+	cursor: pointer;
+}
+
+.week_days .week_day_active {
+	background-color: rgb(62, 62, 62);
+}
+
+/* таймер */
+.night {
+	margin-top: 500px;
+	text-align: center;
+}
+
+.night h2 {
+	margin-bottom: 20px;
+	cursor: default;
+}
+
+.flexbox {
+	display: flex;
+	justify-content: space-around;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 30px;
+}
+
+.night_cycle {
+	background-color: rgb(44, 44, 44);
+	color: white;
+	text-align: center;
+	padding-left: 40px;
+	padding-right: 40px;
+	border-radius: 20px;
+	border: 0ch;
+	cursor: pointer;
+}
+
+.time {
+	font-size: 225%;
+	margin-bottom: 0;
+	margin-top: 15px;
+}
+
+/* звуки */
+
+.sounds ul {
+	display: inline-block;
+	justify-content: space-around;
+	padding: 0;
+	margin-bottom: 325px;
+}
+
+.sounds li {
+	display: inline-block;
+	list-style-type: none;
+	text-align: center;
+	background-color: rgb(45, 45, 45);
+	min-width: 95px;
+	width: 7%;
+	margin: 0 10px 10px 20px;
+	border-radius: 25px;
+}
+
+.sounds button {
+	color: white;
+	background-color: rgb(45, 45, 45);
+	padding: 5px;
+	min-width: 110px;
+	width: 7%;
+	border-radius: 8px;
+	border: none;
+	cursor: pointer;
+}
+
+/* .sounds {
+	color: white;
+	background-color: rgb(45, 45, 45);
+	padding: 5px;
+	min-width: 110px;
+	width: 7%;
+	border-radius: 8px;
+	border: none;
+	cursor: pointer;
+} */
