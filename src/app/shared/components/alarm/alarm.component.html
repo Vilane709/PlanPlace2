@@ -1,14 +1,23 @@
-<ng-container *ngIf="tasksTime$ | async as tasksTime">
-	<div class="task-time-wrapper">
-		<ng-container *ngFor="let taskTime of tasksTime">
-			<div class="task-time">
-				<div class="task-time__time">
-					<div class="task-time__start"> {{ taskTime.start }} </div>
-					<div class="task-time__hyphen"> </div>
-					<div class="task-time__end"> {{ taskTime.end }} </div>
+
+<ng-container *ngIf="routeDay$ | async as pathDay">
+	<ng-container *ngIf="tasksTime$ | async as tasksTime">
+		<div class="task-time-wrapper">
+			<ng-container *ngFor="let taskTime of tasksTime">
+				<div class="task-time">
+					<div class="task-time__time">
+						<div class="task-time__start"> {{ taskTime.start }} </div>
+						<div class="task-time__hyphen"> </div>
+						<div class="task-time__end"> {{ taskTime.end }} </div>
+					</div>
+					<div class="task-time__task"> {{ taskTime.task }} </div>
+					<!-- <div class="task-time__music-icon">
+						<img src="assets/img/add-song.svg" alt="" class="task-time__music-icon-img">
+					</div> -->
+					<button class="task-time__trash" (click)="deleteTaskTime(pathDay, taskTime)">
+						Удалить
+					</button>
 				</div>
-				<div class="task-time__task"> {{ taskTime.task }} </div>
-			</div>
-		</ng-container>
-	</div>
+			</ng-container>
+		</div>
+	</ng-container>
 </ng-container>

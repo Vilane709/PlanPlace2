@@ -20,11 +20,11 @@
 	border-radius: 8px;
 	border: none;
 	cursor: pointer;
-	transition-duration: 0.2s;
+	transition: box-shadow 0.2s linear;
 }
 
 .days__button:hover {
-	-moz-box-shadow:0 0 10px #000; -webkit-box-shadow:0 0 10px #000; box-shadow:0 0 10px rgb(255, 255, 255);
+	box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 .day_active {
@@ -52,7 +52,7 @@
 	align-items: center;
 	text-align: center;
 	font-size: 0.85em;
-	transition-duration: 0.2s;
+	transition: box-shadow 0.2s linear;
 }
 
 .task_new {
@@ -62,9 +62,9 @@
 }
 
 .task:hover {
-	-moz-box-shadow:0 0 10px #000; -webkit-box-shadow:0 0 10px #000; box-shadow:0 0 10px rgb(255, 255, 255);
+	box-shadow:0 0 10px rgb(255, 255, 255);
 }
 
 .task_new:hover {
-	-moz-box-shadow:0 0 10px #000; -webkit-box-shadow:0 0 10px #000; box-shadow:0 0 10px rgb(255, 255, 255);
+	box-shadow:0 0 10px rgb(255, 255, 255);
 }

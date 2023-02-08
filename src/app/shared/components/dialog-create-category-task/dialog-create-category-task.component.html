@@ -2,7 +2,7 @@
 
 	<h4>Сохранение категории задач для этого дня</h4>
 
-	<form class="form" [formGroup]="form">
+	<form class="form" [formGroup]="form" (ngSubmit)="submitForm()">
 		<input class="input" type="text" formControlName="categoryTask">
 		<button type="submit" class="button" [disabled]="!form.valid">Сохранить</button>
 	</form>

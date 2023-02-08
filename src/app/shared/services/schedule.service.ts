@@ -133,11 +133,11 @@ export class ScheduleService {
 		return finded;
 	}
 
-	public addTaskTime(pathDay: string, newTaskTime: NewTaskTime): void {
+	public addTaskTime(pathDay: string, newTaskTime: NewTaskTime): boolean {
 		const scheduleIndexPathDay = this.getScheduleIndexByPathDay(pathDay);
 
 		if (scheduleIndexPathDay === null) {
-			return;
+			return false;
 		}
 
 		const taskTime = new TaskTime(newTaskTime);
@@ -145,6 +145,8 @@ export class ScheduleService {
 		this.schedule[scheduleIndexPathDay].time.push(taskTime);
 		this.setScheduleInLocalStorage(this.schedule);
 		this.taskTimeChangedBehSubj.next(true);
+
+		return true;
 	}
 
 	public getTasksTimeByPathDay(pathDay: string): TaskTime[] {
@@ -177,14 +179,37 @@ export class ScheduleService {
 		)
 	}
 
-	public createCategoryTask(pathDay: string, categoryTask: string): void {
+	public createCategoryTask(pathDay: string, categoryTask: string): boolean {
 		const scheduleIndexPathDay = this.getScheduleIndexByPathDay(pathDay);
 
 		if (scheduleIndexPathDay === null) {
-			return;
+			return false;
 		}
 
 		this.schedule[scheduleIndexPathDay].tasks.push(categoryTask);
+		this.setScheduleInLocalStorage(this.schedule);
 		this.categoryTaskChangedBehSubj.next(true);
+
+		return true;
+	}
+
+	public deleteTaskTimeByPathDay(pathDay: string, taskTime: TaskTime): boolean {
+		const scheduleIndexPathDay = this.getScheduleIndexByPathDay(pathDay);
+
+		if (scheduleIndexPathDay === null) {
+			return false;
+		}
+
+		const findedTaskTimeIdx = this.schedule[scheduleIndexPathDay].time.findIndex(item => item.id === taskTime.id);
+
+		if (findedTaskTimeIdx === -1) {
+			return false;
+		}
+
+		this.schedule[scheduleIndexPathDay].time.splice(findedTaskTimeIdx, 1);
+		this.setScheduleInLocalStorage(this.schedule);
+		this.taskTimeChangedBehSubj.next(true);
+
+		return true;
 	}
 }

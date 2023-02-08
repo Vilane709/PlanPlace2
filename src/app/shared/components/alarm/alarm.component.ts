@@ -13,7 +13,7 @@ import { TaskTime } from '../../models/TaskTime';
 })
 export class AlarmComponent implements OnInit {
 
-	private routeDay$: Observable<string> = this.route.paramMap.pipe(
+	public routeDay$: Observable<string> = this.route.paramMap.pipe(
 		untilDestroyed(this),
 		switchMap(params => {
 			const routeDay = params.get('weekday');
@@ -33,7 +33,10 @@ export class AlarmComponent implements OnInit {
 
   ngOnInit(): void {
 
-
   }
+
+	public deleteTaskTime(pathDay: string, taskTime: TaskTime): void {
+		this.scheduleService.deleteTaskTimeByPathDay(pathDay, taskTime);
+	}
 
 }

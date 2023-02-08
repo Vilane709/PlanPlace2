@@ -1,13 +1,15 @@
 .task-time {
 	gap: 10px;
 	background-color: rgb(62, 62, 62);
-	padding: 15px;
-	padding-left: 20px;
-	padding-right: 20px;
+	--paddingX: 20px;
+	--paddingY: 15px;
+	padding: var(--paddingY) var(--paddingX);
 	border-radius: 20px;
 	margin: auto;
 	margin-top: 20px;
-	width: 80%;
+	/* width: 80%; */
+	max-width: 300px;
+	position: relative;
 }
 
 .task-time__time {
@@ -17,6 +19,7 @@
 	--color: white;
 	color: var(--color);
 	font-size: smaller;
+	padding-bottom: 40px;
 }
 
 .task-time__task {
@@ -29,4 +32,29 @@
 	width: 10px;
 	height: 1.5px;
 	background-color: var(--color);
+}
+
+.task-time__music-icon {
+	width: 25px;
+	position: absolute;
+	top: var(--paddingY);
+	right: var(--paddingX);
+}
+
+.task-time__trash {
+	background-color: rgb(255, 255, 255);
+	border: none;
+	border-radius: 5px;
+	padding: 5px 10px;
+	/* font-weight: bold; */
+	font-size: 0.9em;
+	position: absolute;
+	bottom: var(--paddingY);
+	right: var(--paddingX);
+	cursor: pointer;
+	transition: box-shadow 0.2s linear;
+}
+
+.task-time__trash:hover {
+	box-shadow: 0 0 10px rgb(255, 255, 255);
 }
