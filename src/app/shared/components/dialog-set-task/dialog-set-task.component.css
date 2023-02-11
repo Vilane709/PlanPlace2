@@ -1,5 +1,5 @@
 .popup {
-	background-color: rgb(48, 48, 48);;
+	background-color: #5f3b39;
 	color: white;
 	padding: 30px 25px;
 	text-align: center;
@@ -7,10 +7,10 @@
 
 .input {
 	margin: 20px;
-	background-color: rgb(73, 73, 73);
+	background-color: #E0D6CD;
 	border: none;
 	border-radius: 20px;
-	color: white;
+	color: #4f312f;
 	padding: 20px 25px;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .button {
-	background-color: rgb(73, 73, 73);
+	background-color: #2e5d9ec4;
 	border: none;
 	border-radius: 20px;
 	color: white;

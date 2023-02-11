@@ -1,6 +1,9 @@
 .task-time {
+	color: white;
 	gap: 10px;
-	background-color: rgb(62, 62, 62);
+	background-color: #2e5d9ec4
+
+	;
 	--paddingX: 20px;
 	--paddingY: 15px;
 	padding: var(--paddingY) var(--paddingX);
@@ -16,7 +19,7 @@
 	display: flex;
 	align-items: center;
 	gap: 10px;
-	--color: white;
+	--color:white;
 	color: var(--color);
 	font-size: smaller;
 	padding-bottom: 40px;
@@ -42,7 +45,8 @@
 }
 
 .task-time__trash {
-	background-color: rgb(255, 255, 255);
+	color: white;
+	background-color: #EA5E3A;
 	border: none;
 	border-radius: 5px;
 	padding: 5px 10px;
@@ -56,5 +60,5 @@
 }
 
 .task-time__trash:hover {
-	box-shadow: 0 0 10px rgb(255, 255, 255);
+	box-shadow: 0 0 10px #D0C3BD;
 }

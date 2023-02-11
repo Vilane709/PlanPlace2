@@ -3,12 +3,13 @@
 }
 
 :root {
-	--bgColor: rgb(34, 34, 34);
+	background: #49A6B8 no-repeat;
 	--color: white;
 }
 
 html {
 	box-sizing: border-box;
+	height: 100%;
 }
 
 body {

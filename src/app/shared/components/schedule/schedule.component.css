@@ -12,8 +12,8 @@
 }
 
 .days__button {
-	color: inherit;
-	background-color: rgb(45, 45, 45);
+	color: #84514E;
+	background-color: #E0D6CD;
 	padding: 5px;
 	min-width: 110px;
 	width: 7%;
@@ -28,7 +28,8 @@
 }
 
 .day_active {
-	background-color: rgb(62, 62, 62);
+	background-color: #EA5E3A;
+	color: white;
 }
 
 .tasks {
@@ -39,8 +40,8 @@
 }
 
 .task {
-	color: white;
-	background-color: rgb(45, 45, 45);
+	color: #534F4C;
+	background-color: #E0D6CD;
 	padding: 10px 20px;
 	min-width: 110px;
 	width: 7%;
@@ -56,6 +57,8 @@
 }
 
 .task_new {
+	color: white;
+	background-color: #EA5E3A;
 	width: auto;
 	min-width: auto;
 	transition-duration: 0.2s;
