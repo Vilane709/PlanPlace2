@@ -1,9 +1,7 @@
 .task-time {
-	color: white;
+	color: rgb(26, 26, 26);
 	gap: 10px;
-	background-color: #2e5d9ec4
-
-	;
+	background-color: rgb(227, 251, 255);
 	--paddingX: 20px;
 	--paddingY: 15px;
 	padding: var(--paddingY) var(--paddingX);
@@ -11,7 +9,7 @@
 	margin: auto;
 	margin-top: 20px;
 	/* width: 80%; */
-	max-width: 300px;
+	max-width: 400px;
 	position: relative;
 }
 
@@ -19,10 +17,10 @@
 	display: flex;
 	align-items: center;
 	gap: 10px;
-	--color:white;
+	--color:rgb(26, 26, 26);
 	color: var(--color);
 	font-size: smaller;
-	padding-bottom: 40px;
+	padding-bottom: 20px;
 }
 
 .task-time__task {
@@ -46,7 +44,7 @@
 
 .task-time__trash {
 	color: white;
-	background-color: #EA5E3A;
+	background: linear-gradient(to top right, rgb(255, 2, 221), rgb(0, 213, 255));
 	border: none;
 	border-radius: 5px;
 	padding: 5px 10px;
@@ -60,5 +58,5 @@
 }
 
 .task-time__trash:hover {
-	box-shadow: 0 0 10px #D0C3BD;
+	box-shadow: 0 0 16px rgba(202, 171, 217, 0.9);
 }

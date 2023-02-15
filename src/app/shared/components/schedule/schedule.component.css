@@ -12,8 +12,8 @@
 }
 
 .days__button {
-	color: #84514E;
-	background-color: #E0D6CD;
+	color: #ffffff;
+	background: linear-gradient(to top right, rgba(163, 43, 222, 0.9), rgba(14, 106, 209, 0.9));
 	padding: 5px;
 	min-width: 110px;
 	width: 7%;
@@ -24,11 +24,11 @@
 }
 
 .days__button:hover {
-	box-shadow: 0 0 10px rgb(255, 255, 255);
+	box-shadow: 0 0 10px rgba(167, 141, 180, 0.9);
 }
 
 .day_active {
-	background-color: #EA5E3A;
+	background: linear-gradient(to top right, rgb(255, 2, 221), rgb(0, 213, 255));
 	color: white;
 }
 
@@ -40,8 +40,8 @@
 }
 
 .task {
-	color: #534F4C;
-	background-color: #E0D6CD;
+	color: #ffffff;
+	background: linear-gradient(to top right, rgba(163, 43, 222, 0.9), rgba(14, 106, 209, 0.9));
 	padding: 10px 20px;
 	min-width: 110px;
 	width: 7%;
@@ -58,16 +58,16 @@
 
 .task_new {
 	color: white;
-	background-color: #EA5E3A;
+	background: linear-gradient(to top right, rgb(255, 2, 221), rgb(0, 213, 255));
 	width: auto;
 	min-width: auto;
 	transition-duration: 0.2s;
 }
 
 .task:hover {
-	box-shadow:0 0 10px rgb(255, 255, 255);
+	box-shadow: 0 0 10px rgba(167, 141, 180, 0.9);
 }
 
 .task_new:hover {
-	box-shadow:0 0 10px rgb(255, 255, 255);
+	box-shadow: 0 0 10px rgba(167, 141, 180, 0.9);
 }

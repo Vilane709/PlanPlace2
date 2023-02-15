@@ -1,32 +1,32 @@
 .popup {
-	background-color: #5f3b39;
-	color: rgb(254, 254, 254);
+	background-color: #ffffff;
+	color: rgb(26, 26, 26);
 	padding: 30px 25px;
 	text-align: center;
 }
 
 .form {
 	display: flex;
-	color: #5f3b39;
+	color: #ffffff;
 	flex-direction: column;
 	align-items: center;
 	gap: 15px;
 }
 
 .button {
-	background-color: #2e5d9ec4;
+	background: linear-gradient(to top right, rgb(255, 2, 221), rgb(0, 213, 255));
 	border: none;
 	border-radius: 20px;
 	color: white;
 	padding: 10px 15px;
 	cursor: pointer;
 	transition-timing-function: linear;
-	/* transition-duration: 0.2s;----- */
-	transition-property: background-color, color, border-color;
+	transition-duration: 0.2s;
+	/* transition-property: background-color, color, border-color; */
 }
 
 .button:hover {
-	-moz-box-shadow:0 0 10px rgb(255, 255, 255); -webkit-box-shadow:0 0 10px rgb(255, 255, 255); box-shadow:0 0 10px rgb(255, 255, 255);
+	box-shadow: 0 0 10px rgba(167, 141, 180, 0.9);
 }
 
 .button:disabled:hover {
@@ -35,14 +35,14 @@
 
 .button:disabled {
 	cursor: none;
-	background-color: rgba(19, 1, 1, 0.3);
-	color: rgba(255, 255, 255, 0.3);
+	background: linear-gradient(to top right, rgba(82, 82, 82, 0.5), rgba(188, 188, 188, 0.5));
+	color: rgba(44, 44, 44, 0.3);
 	border-color: rgba(195, 195, 195, 0.3);
 }
 
 .input {
 	margin: 20px;
-	background-color: #E0D6CD;
+	background-color: #dedede;
 	border: none;
 	border-radius: 20px;
 	color: #4f312f;
